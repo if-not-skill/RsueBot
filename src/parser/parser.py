@@ -174,7 +174,7 @@ class Parser:
             log.debug('\n' + str(week))
 
     @staticmethod
-    def __parse_day(self, day):
+    def __parse_day(day):
         weekday = day.find("div", id="nedelya")
         if weekday is None:
             weekday = day.find("div", id="nedelya-select")
