@@ -173,6 +173,7 @@ class Parser:
         for week in weeks:
             log.debug('\n' + str(week))
 
+    @staticmethod
     def __parse_day(self, day):
         weekday = day.find("div", id="nedelya")
         if weekday is None:
